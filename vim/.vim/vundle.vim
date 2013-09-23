@@ -29,6 +29,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
 Bundle 'Valloric/MatchTagAlways'
+Bundle 'terryma/vim-multiple-cursors'
 " Language Additions
 "   Ruby
 Bundle 'vim-ruby/vim-ruby'
