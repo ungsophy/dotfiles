@@ -24,19 +24,6 @@ vmap K k
 " Make line completion easier.
 imap <C-l> <C-x><C-l>
 
-" Easier Scrolling (think j/k with left hand)
-" All variations are mapped for now until I get used to one
-" C/M/D + d (page up)
-" C/M/D + f (page down)
-nmap <C-d> <C-b>
-if has("gui_macvim")
-  nmap <D-f> <C-f>
-  nmap <D-d> <C-b>
-else
-  nmap <M-f> <C-f>
-  nmap <M-d> <C-b>
-endif
-
 " Overrides neocomplcache with regular keyword completion
 inoremap <expr><C-k>  "\<C-x><C-n>"
 
@@ -53,10 +40,6 @@ nmap gy :%y+<cr>
 " Make Y behave like other capital commands.
 " Hat-tip http://vimbits.com/bits/11
 nnoremap Y y$
-
-" Just to beginning and end of lines easier. From http://vimbits.com/bits/16
-noremap H ^
-noremap L $
 
 " Clear search
 map <silent><Leader>/ :nohls<CR>
@@ -132,23 +115,8 @@ inoremap JK <Esc>
 inoremap Jk <Esc>
 inoremap jK <Esc>
 
-" -------------------------------------
-" The following commands are from Janus
-" http://git.io/_GhulA
-" -------------------------------------
-
-" Underline the current line with '-'
-nmap <silent> <leader>ul :t.\|s/./-/g\|:nohls<cr>
-
-" Underline the current line with '='
-nmap <silent> <leader>uul :t.\|s/./=/g\|:nohls<cr>
-
-" Format the entire file
-nmap <leader>fef ggVG=
-
 " Wrap the current line
 nmap <leader>fl Vgq
 
-" Format a json file with Python's built in json.tool.
-" from https://github.com/spf13/spf13-vim/blob/3.0/.vimrc#L390
-nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
+" Tab
+nmap <silent> gn :tabn<CR>

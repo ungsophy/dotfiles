@@ -1,0 +1,5 @@
+bash
+bundle
+.DS_Store
+.backup
+.tmp

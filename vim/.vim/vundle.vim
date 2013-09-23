@@ -15,21 +15,14 @@ Bundle 'gmarik/vundle'
 " Plugin Bundles
 " ---------------
 
-" Navigation
-Bundle 'ZoomWin'
 " This fork is required due to remapping ; to :
-Bundle 'christoomey/vim-space'
-Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
 " UI Additions
 Bundle 'scrooloose/nerdtree'
 " Commands
-Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
 Bundle 'rking/ag.vim'
-Bundle 'skalnik/vim-vroom'
-Bundle 'HelpClose'
 Bundle 'nelstrom/vim-visual-star-search'
 " Automatic Helpers
 Bundle 'Raimondi/delimitMate'
@@ -45,7 +38,6 @@ Bundle 'tpope/vim-rake'
 "   JavaScript
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'leshill/vim-json'
 "   HTML
 Bundle 'nono/vim-handlebars'
 Bundle 'othree/html5.vim'
@@ -54,12 +46,8 @@ Bundle 'indenthtml.vim'
 Bundle 'mutewinter/tomdoc.vim'
 Bundle 'jc00ke/vim-tomdoc'
 "   Other Languages
-Bundle 'mutewinter/nginx.vim'
 Bundle 'mutewinter/vim-css3-syntax'
-Bundle 'acustodioo/vim-tmux'
-Bundle 'plasticboy/vim-markdown'
 " MatchIt
 Bundle 'matchit.zip'
 " Libraries
 Bundle 'L9'
-Bundle 'tpope/vim-repeat'
