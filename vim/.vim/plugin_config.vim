@@ -94,13 +94,6 @@ let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
 " ---------------
-" Unconditional Paste
-" ---------------
-let g:UnconditionalPaste_NoDefaultMappings=1
-nmap gcP <Plug>UnconditionalPasteCharBefore
-nmap gcp <Plug>UnconditionalPasteCharAfter
-
-" ---------------
 " MatchTagAlways
 " ---------------
 let g:mta_filetypes = {
