@@ -118,5 +118,7 @@ inoremap jK <Esc>
 " Wrap the current line
 nmap <leader>fl Vgq
 
+" -----------------------
 " Tab
+" -----------------------
 nmap <silent> gn :tabn<CR>
