@@ -61,6 +61,15 @@ nnoremap <leader>m :CtrlPMRUFiles<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 
 " ---------------
+" tcomment_vim
+" ---------------
+let g:tcommentMaps = 0
+nnoremap <silent><leader>cc :TComment<CR>
+vnoremap <silent><leader>cc :TComment<CR>
+nnoremap <silent><leader>cb :TCommentBlock<CR>
+vnoremap <silent><leader>cb :TCommentBlock<CR>
+
+" ---------------
 " Powerline
 " ---------------
 " Keep ^B from showing on Windows in Powerline
@@ -108,6 +117,11 @@ let g:mta_filetypes = {
 " ---------------
 let g:ycm_complete_in_comments_and_strings=1
 let g:ycm_collect_identifiers_from_comments_and_strings=1
+
+" ---------------
+" vim-markdown
+" ---------------
+let g:vim_markdown_folding_disabled=1
 
 " ---------------
 " Vundle

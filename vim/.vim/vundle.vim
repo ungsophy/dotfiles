@@ -30,6 +30,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
 Bundle 'Valloric/MatchTagAlways'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'christoomey/vim-space'
+Bundle 'tomtom/tcomment_vim'
 " Language Additions
 "   Ruby
 Bundle 'vim-ruby/vim-ruby'
@@ -48,6 +50,7 @@ Bundle 'mutewinter/tomdoc.vim'
 Bundle 'jc00ke/vim-tomdoc'
 "   Other Languages
 Bundle 'mutewinter/vim-css3-syntax'
+Bundle 'plasticboy/vim-markdown'
 " MatchIt
 Bundle 'matchit.zip'
 " Libraries
