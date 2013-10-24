@@ -122,3 +122,8 @@ nmap <leader>fl Vgq
 " Tab
 " -----------------------
 nmap <silent> gn :tabn<CR>
+
+" -----------------------
+" Execution
+" -----------------------
+map <leader>r :!ruby-2.0.0-p247 %<CR>
