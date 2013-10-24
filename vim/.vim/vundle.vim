@@ -50,7 +50,6 @@ Bundle 'mutewinter/tomdoc.vim'
 Bundle 'jc00ke/vim-tomdoc'
 "   Other Languages
 Bundle 'mutewinter/vim-css3-syntax'
-Bundle 'plasticboy/vim-markdown'
 " MatchIt
 Bundle 'matchit.zip'
 " Libraries
