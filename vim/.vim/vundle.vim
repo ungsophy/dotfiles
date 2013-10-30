@@ -33,6 +33,7 @@ Bundle 'Valloric/MatchTagAlways'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'christoomey/vim-space'
 Bundle 'tomtom/tcomment_vim'
+Bundle 'sunaku/vim-ruby-minitest'
 " Language Additions
 "   Ruby
 Bundle 'vim-ruby/vim-ruby'
