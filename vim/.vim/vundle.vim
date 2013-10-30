@@ -24,6 +24,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
 Bundle 'rking/ag.vim'
 Bundle 'nelstrom/vim-visual-star-search'
+Bundle 'thoughtbot/vim-rspec'
 " Automatic Helpers
 Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/syntastic'

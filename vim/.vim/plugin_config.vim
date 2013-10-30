@@ -124,3 +124,11 @@ let g:ycm_collect_identifiers_from_comments_and_strings=1
 nmap <Leader>bi :BundleInstall<CR>
 nmap <Leader>bu :BundleInstall!<CR>
 nmap <Leader>bc :BundleClean<CR>
+
+" ---------------
+" RSpec
+" ---------------
+map <Leader>f :call RunCurrentSpecFile()<CR>
+map <Leader>c :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
