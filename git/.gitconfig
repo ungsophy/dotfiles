@@ -4,4 +4,8 @@
 [alias]
   st = status
   ci = commit
+  di = diff
+  dc = diff --cached
   pm = push origin master
+  aa = add --all
+  amend = commit --amend
