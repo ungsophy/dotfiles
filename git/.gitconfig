@@ -9,3 +9,4 @@
   pm = push origin master
   aa = add --all
   amend = commit --amend
+  slog = log --oneline --abbrev-commit --all --graph --decorate --color
