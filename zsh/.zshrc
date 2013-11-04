@@ -48,4 +48,3 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/Users/Sophy/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/Sophy/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/Sophy/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/Sophy/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/MacGPG2/bin:/Users/Sophy/.rvm/bin
 
 alias ls="ls -la"
-alias gg="git log --oneline --abbrev-commit --all --graph --decorate --color"
