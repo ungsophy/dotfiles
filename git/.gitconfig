@@ -1,0 +1,7 @@
+[user]
+  name = Sophy Eung
+  email = ungsophy@gmail.com
+[alias]
+  st = status
+  ci = commit
+  pm = push origin master
