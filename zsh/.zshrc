@@ -49,3 +49,4 @@ export PATH=$PATH:/Users/Sophy/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/Sophy
 
 alias ls="ls -la"
 alias gg="git log --oneline --abbrev-commit --all --graph --decorate --color"
+alias gp="git push origin master"
