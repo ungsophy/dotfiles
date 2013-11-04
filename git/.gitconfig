@@ -10,3 +10,5 @@
   aa = add --all
   amend = commit --amend
   slog = log --oneline --abbrev-commit --all --graph --decorate --color
+  unstage = reset HEAD --
+  last = log -1 HEAD
