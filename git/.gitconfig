@@ -13,3 +13,5 @@
   unstage = reset HEAD --
   last    = log -1 HEAD
   ab      = branch -a
+[core]
+  editor = /usr/bin/vim
