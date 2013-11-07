@@ -2,11 +2,14 @@
   name = Sophy Eung
   email = ungsophy@gmail.com
 [alias]
-  st = status
-  ci = commit
-  di = diff
-  dc = diff --cached
-  pm = push origin master
-  aa = add --all
-  amend = commit --amend
-  slog = log --oneline --abbrev-commit --all --graph --decorate --color
+  st      = status
+  ci      = commit
+  di      = diff
+  dc      = diff --cached
+  pm      = push origin master
+  aa      = add --all
+  amend   = commit --amend
+  lg      = log --oneline --abbrev-commit --all --graph --decorate --color
+  unstage = reset HEAD --
+  last    = log -1 HEAD
+  ab      = branch -a
