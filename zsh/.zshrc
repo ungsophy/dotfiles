@@ -49,5 +49,6 @@ export PATH=/usr/local/bin:$PATH:/Users/Sophy/.rvm/gems/ruby-2.0.0-p247@global/b
 
 alias ls="ls -la"
 alias cap_prod="bundle exec cap production deploy"
+alias be_ruby="bundle exec ruby"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
