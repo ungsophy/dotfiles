@@ -59,6 +59,7 @@ nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>u :CtrlPCurFile<CR>
 nnoremap <leader>m :CtrlPMRUFiles<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>. :CtrlPTag<CR>
 
 " ---------------
 " tcomment_vim
