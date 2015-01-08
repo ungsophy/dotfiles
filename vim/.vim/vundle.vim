@@ -51,7 +51,8 @@ Bundle 'indenthtml.vim'
 Bundle 'mutewinter/tomdoc.vim'
 Bundle 'jc00ke/vim-tomdoc'
 "   Other Languages
-Bundle 'mutewinter/vim-css3-syntax'
+Bundle 'c.vim'
+
 " MatchIt
 Bundle 'matchit.zip'
 " Libraries
