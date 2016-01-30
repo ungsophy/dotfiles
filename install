@@ -4,3 +4,9 @@ ln -s $(pwd)/gitconfig ~/.gitconfig
 
 ln -s $(pwd)/vimrc ~/.vimrc
 ln -s $(pwd)/vim ~/.vim
+
+mkdir ~/.vim/bundle
+mkdir ~/.vim/.backup
+mkdir ~/.vim/.tmp
+
+git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
