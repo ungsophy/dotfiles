@@ -122,6 +122,7 @@ nmap <leader>fl Vgq
 " Tab
 " -----------------------
 nmap <silent> gn :tabn<CR>
+nmap <silent> tn :tabnew<CR>
 
 " -----------------------
 " Execution
