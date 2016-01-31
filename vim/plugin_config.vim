@@ -138,3 +138,9 @@ map <Leader>a :call RunAllSpecs()<CR>
 " Ruby-minitest
 " ---------------
 set completefunc=syntaxcomplete#Complete
+
+" ---------------
+" Vim-maximizer
+" ---------------
+let g:maximizer_set_default_mapping = 1
+nnoremap <leader>tt :MaximizerToggle<CR>
