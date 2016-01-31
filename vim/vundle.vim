@@ -19,6 +19,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 " UI Additions
 Bundle 'scrooloose/nerdtree'
+Bundle 'szw/vim-maximizer'
 " Commands
 Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
