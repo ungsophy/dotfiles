@@ -6,6 +6,5 @@ To install run:
 
 ```
 $ ./install
-
-vim +PluginInstall +qall
+$ vim +PluginInstall +qall
 ```
