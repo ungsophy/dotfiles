@@ -144,3 +144,8 @@ set completefunc=syntaxcomplete#Complete
 " ---------------
 let g:maximizer_set_default_mapping = 1
 nnoremap <leader>tt :MaximizerToggle<CR>
+
+" ---------------
+" vim-go
+" ---------------
+let g:go_fmt_command = "goimports"

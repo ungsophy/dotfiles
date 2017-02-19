@@ -168,3 +168,28 @@ function WriteBuffer()
 endfunction
 
 noremap <silent> <enter> :call WriteBuffer()<CR>
+
+function UseTab()
+  set noexpandtab
+  set copyindent
+  set preserveindent
+  set softtabstop=0
+  set shiftwidth=4
+  set tabstop=4
+  set backspace=2  " Delete everything with backspace
+endfunction
+
+function UseSpace()
+  set tabstop=2
+  set backspace=2  " Delete everything with backspace
+  set shiftwidth=2 " Tabs under smart indent
+
+  set cindent
+  set autoindent
+  set smarttab
+  set expandtab
+endfunction
+
+function FormatJSON()
+  :%!python -m json.tool
+endfunction

@@ -36,6 +36,8 @@ Bundle 'christoomey/vim-space'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'sunaku/vim-ruby-minitest'
 " Language Additions
+"   Go
+Bundle 'fatih/vim-go'
 "   Ruby
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-haml'
@@ -53,6 +55,7 @@ Bundle 'mutewinter/tomdoc.vim'
 Bundle 'jc00ke/vim-tomdoc'
 "   Other Languages
 "Bundle 'c.vim'
+Bundle 'cf-utils'
 
 " MatchIt
 Bundle 'matchit.zip'
