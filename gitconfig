@@ -1,6 +1,6 @@
 [user]
-	name = Sophy Eung
-	email = ungsophy@gmail.com
+  name = Sophy Eung
+  email = ungsophy@gmail.com
 [alias]
   st      = status
   ci      = commit
