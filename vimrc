@@ -1,28 +1,168 @@
-" Thanks to Jeremy Mack for this awesome vimrc.
+" A minimal vimrc for new vim users to start with.
 
-" ===========================================
-" Who: Jeremy Mack (@mutewinter)
-" What: .vimrc of champions
-" Version: 2.0 - Now individual config files!
-" ===========================================
+" Use Vim settings, rather than Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
 
-" All of the plugins are installed with Vundle from this file.
-source ~/.vim/vundle.vim
+" Make backspace behave in a sane manner.
+set backspace=indent,eol,start
 
-" Automatically detect file types. (must turn on after Vundle)
+" Set the title of the window in the terminal to the file
+set title
+
+" Always show the statusline
+set laststatus=2   
+
+" Ruler on
+set ruler
+
+" Display line numbers
+set number
+
+" Yank to clipboard
+set clipboard=unnamed
+
+" Switch syntax highlighting on
+syntax on
+
+" Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
-" Platform (Windows, Mac, etc.) configuration.
-source ~/.vim/platforms.vim
-" All of the Vim configuration.
-source ~/.vim/config.vim
-" All hotkeys, not depedant on plugins, are bound here.
-source ~/.vim/bindings.vim
-" Plugin-specific configuration.
-source ~/.vim/plugin_config.vim
-" Small custom functions.
-source ~/.vim/functions.vim
-" Auto commands.
-source ~/.vim/autocmds.vim
+" Color theme
+set t_Co=256
+colorscheme grb256
 
-call UseTab()
+"---------------------------
+" Core bindings begin
+"---------------------------
+
+" Set leader to ,
+" Note: This line must come before any <leader> mappings
+let mapleader=","
+
+" Window movement
+nmap <silent> gh :wincmd h<CR>
+nmap <silent> gj :wincmd j<CR>
+nmap <silent> gk :wincmd k<CR>
+nmap <silent> gl :wincmd l<CR>
+
+" Swap Windows
+nmap <silent> gx :wincmd x<CR>
+
+" Move to the next tab
+nmap <silent> gn :tabn<CR>
+
+" Create a new tap
+nmap <silent> tn :tabnew<CR>
+
+" Reload ~/.vimrc
+nnoremap <leader>r :so ~/.vimrc<CR>
+
+"---------------------------
+" Core binding end
+"---------------------------
+
+
+"---------------------------
+" Plugins begin
+"---------------------------
+
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+
+" Files explorer
+Plug 'https://github.com/scrooloose/nerdtree.git'
+
+" Fuzzy files finder
+Plug 'https://github.com/junegunn/fzf.git', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'https://github.com/junegunn/fzf.vim.git'
+
+" Comments
+Plug 'https://github.com/scrooloose/nerdcommenter.git'
+
+" Surround
+Plug 'tpope/vim-surround'
+
+" Maximizer
+Plug 'szw/vim-maximizer'
+
+" Initialize plugin system
+call plug#end()
+
+"---------------------------
+" Plugins end
+"---------------------------
+
+
+"---------------------------
+" Plugins bindings begin
+"---------------------------
+
+" fzf
+nnoremap <leader>f :FZF<CR>
+
+" nerdcommenter
+nnoremap <leader>nt :NERDTreeToggle<CR>
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" vim-maximizer
+let g:maximizer_set_default_mapping = 1
+nnoremap <leader>tt :MaximizerToggle<CR>
+
+"---------------------------
+" Plugins bindings end
+"---------------------------
+
+
+"---------------------------
+" Functions begin
+"---------------------------
+
+if !exists("*UseTab")
+  function UseTab()
+    set noexpandtab
+    set copyindent
+    set preserveindent
+    set softtabstop=0
+    set shiftwidth=4
+    set tabstop=4
+    set backspace=2  " Delete everything with backspace
+  endfunction
+endif
+
+if !exists("*UseSpace")
+  function UseSpace()
+    set tabstop=2
+    set backspace=2  " Delete everything with backspace
+    set shiftwidth=2 " Tabs under smart indent
+
+    set cindent
+    set autoindent
+    set smarttab
+    set expandtab
+  endfunction
+endif
+
+if !exists("*FormatJSON")
+  function FormatJSON()
+    :%!python -m json.tool
+  endfunction
+endif
+
+"---------------------------
+" Functions end
+"---------------------------
