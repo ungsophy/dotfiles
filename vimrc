@@ -58,6 +58,9 @@ nmap <silent> tn :tabnew<CR>
 " Reload ~/.vimrc
 nnoremap <leader>r :so ~/.vimrc<CR>
 
+" Exit terminal mode
+tnoremap <C-]> <C-\><C-n>
+
 "---------------------------
 " Core binding end
 "---------------------------
