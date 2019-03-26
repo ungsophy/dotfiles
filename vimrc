@@ -84,6 +84,10 @@ endif
 
 " Intellisense
 Plug 'https://github.com/Valloric/YouCompleteMe.git'
+" Assume that YouCompleteMe is at '/Users/ungsophy/.vim/plugged/YouCompleteMe'
+"
+" cd /Users/ungsophy/.vim/plugged/YouCompleteMe
+" ./install.py --all
 
 " Programming languages
 Plug 'https://github.com/fatih/vim-go.git'
