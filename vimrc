@@ -25,6 +25,8 @@ set clipboard=unnamed
 " Switch syntax highlighting on
 syntax on
 
+set hlsearch
+
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
@@ -73,61 +75,54 @@ tnoremap <C-]> <C-\><C-n>
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
+" ack.vim
+Plug 'https://github.com/mileszs/ack.vim.git'
+nnoremap <leader>g :Ack 
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
+" Intellisense
+Plug 'https://github.com/Valloric/YouCompleteMe.git'
+
+" Programming languages
+Plug 'https://github.com/fatih/vim-go.git'
+
 " Files explorer
 Plug 'https://github.com/scrooloose/nerdtree.git'
 
 " Fuzzy files finder
 Plug 'https://github.com/junegunn/fzf.git', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'https://github.com/junegunn/fzf.vim.git'
+nnoremap <leader>f :FZF<CR>
 
 " Comments
 Plug 'https://github.com/scrooloose/nerdcommenter.git'
+nnoremap <leader>nt :NERDTreeToggle<CR>
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
 
 " Surround
 Plug 'tpope/vim-surround'
 
 " Maximizer
 Plug 'szw/vim-maximizer'
+let g:maximizer_set_default_mapping = 1
+nnoremap <leader>tt :MaximizerToggle<CR>
 
 " Initialize plugin system
 call plug#end()
 
 "---------------------------
 " Plugins end
-"---------------------------
-
-
-"---------------------------
-" Plugins bindings begin
-"---------------------------
-
-" fzf
-nnoremap <leader>f :FZF<CR>
-
-" nerdcommenter
-nnoremap <leader>nt :NERDTreeToggle<CR>
-
-" Add spaces after comment delimiters by default
-let g:NERDSpaceDelims = 1
-
-" Use compact syntax for prettified multi-line comments
-let g:NERDCompactSexyComs = 1
-
-" Align line-wise comment delimiters flush left instead of following code indentation
-let g:NERDDefaultAlign = 'left'
-
-" Allow commenting and inverting empty lines (useful when commenting a region)
-let g:NERDCommentEmptyLines = 1
-
-" Enable trimming of trailing whitespace when uncommenting
-let g:NERDTrimTrailingWhitespace = 1
-
-" vim-maximizer
-let g:maximizer_set_default_mapping = 1
-nnoremap <leader>tt :MaximizerToggle<CR>
-
-"---------------------------
-" Plugins bindings end
 "---------------------------
 
 
